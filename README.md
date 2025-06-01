@@ -15,29 +15,23 @@
 
 ---
 
-## Mathematical Formulation
+## 🎯 Mathematical Formulation
 
-**Objective:**
+**Objective:**  
 $$
 \min f(x) = \alpha \cdot \text{Rent}(x) + \beta \cdot \text{CommuteTime}(x) + \gamma \cdot \text{TransportCost}(x)
 $$
 
-**Subject to:**
-$$
-\text{Rent}(x) \leq \text{Budget}_{\max}
-$$
-$$
-\text{Area}(x) \geq \text{Area}_{\min}
-$$
-$$
-\text{CommuteTime}(x) \leq \text{Time}_{\max}
-$$
-$$
-\text{OwnerType}(x) = \text{"Private"}
-$$
-$$
-\text{AccessibilityScore}(x) \geq \text{Threshold}
-$$
+**Subject to constraints:**
+
+- 💸 $$\text{Rent}(x) \leq \text{Budget}_{\max}$$
+- 🏠 $$\text{Area}(x) \geq \text{Area}_{\min}$$
+- 🚇 $$\text{CommuteTime}(x) \leq \text{Time}_{\max}$$
+- 👤 $$\text{OwnerType}(x) = \text{"Private"}$$
+- 📍 $$\text{AccessibilityScore}(x) \geq \text{Threshold}$$
+
+Where $x$ represents the selected apartment from the feasible set $X$.
+
 
 ---
 
