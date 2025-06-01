@@ -23,14 +23,14 @@ This project addresses a **facility location optimization problem** where:
 - **Solution Space**: Multi-dimensional analysis across price, location, and accessibility metrics
 
 ---
-
-## Objective Function
+## Mathematical Formulation
+**Objective Function**
 
 $$
 \min f(x) = \alpha \cdot \text{Rent}(x) + \beta \cdot \text{CommuteTime}(x) + \gamma \cdot \text{TransportCost}(x)
 $$
 
-## Subject to Constraints
+**Subject to Constraints**
 
 $$
 \text{Rent}(x) \leq \text{Budget}_{\max}
