@@ -174,7 +174,7 @@ This project demonstrates practical application of:
 
 ## 📄 **License & Usage**
 
-This optimization system is available for educational and research purposes. The methodology can be adapted for other urban facility location problems.
+This optimization solution is available for educational and research purposes. The methodology can be adapted for other urban facility location problems.
 
 ---
 
