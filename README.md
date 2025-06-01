@@ -35,24 +35,15 @@ $$
 ## Subject to Constraints
 
 $$
-\text{Rent}(x) \leq \text{Budget}_{\max}
+\begin{align*}
+\text{Rent}(x) &\leq \text{Budget}_{\max} \\
+\text{Area}(x) &\geq \text{Area}_{\min} \\
+\text{CommuteTime}(x) &\leq \text{Time}_{\max} \\
+\text{OwnerType}(x) &= \text{"Private"} \\
+\text{AccessibilityScore}(x) &\geq \text{Threshold}
+\end{align*}
 $$
 
-$$
-\text{Area}(x) \geq \text{Area}_{\min}
-$$
-
-$$
-\text{CommuteTime}(x) \leq \text{Time}_{\max}
-$$
-
-$$
-\text{OwnerType}(x) = \text{"Private"}
-$$
-
-$$
-\text{AccessibilityScore}(x) \geq \text{Threshold}
-$$
 
 Where $x$ represents the selected apartment from the feasible set $X$.
 
