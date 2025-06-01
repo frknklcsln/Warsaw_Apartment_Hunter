@@ -24,24 +24,32 @@ This project addresses a **facility location optimization problem** where:
 
 ---
 
-### Problem Formulation
-
-**Objective Function:**
+## Objective Function
 
 $$
 \min f(x) = \alpha \cdot \text{Rent}(x) + \beta \cdot \text{CommuteTime}(x) + \gamma \cdot \text{TransportCost}(x)
 $$
 
-**Subject to Constraints:**
+## Subject to Constraints
 
 $$
-\begin{align*}
-\text{Rent}(x) &\leq \text{Budget}_{\max} \\
-\text{Area}(x) &\geq \text{Area}_{\min} \\
-\text{CommuteTime}(x) &\leq \text{Time}_{\max} \\
-\text{OwnerType}(x) &= \text{"Private"} \\
-\text{AccessibilityScore}(x) &\geq \text{Threshold}
-\end{align*}
+\text{Rent}(x) \leq \text{Budget}_{\max}
+$$
+
+$$
+\text{Area}(x) \geq \text{Area}_{\min}
+$$
+
+$$
+\text{CommuteTime}(x) \leq \text{Time}_{\max}
+$$
+
+$$
+\text{OwnerType}(x) = \text{"Private"}
+$$
+
+$$
+\text{AccessibilityScore}(x) \geq \text{Threshold}
 $$
 
 Where $x$ represents the selected apartment from the feasible set $X$.
