@@ -24,6 +24,48 @@ This project addresses a **facility location optimization problem** where:
 
 ---
 
+## 📈 **Mathematical Formulation**
+
+## Objective Function
+
+$$
+\min f(x) = \alpha \cdot \text{Rent}(x) + \beta \cdot \text{CommuteTime}(x) + \gamma \cdot \text{TransportCost}(x)
+$$
+
+## Subject to Constraints
+
+$$
+\text{Rent}(x) \leq \text{Budget}_{\max}
+$$
+
+$$
+\text{Area}(x) \geq \text{Area}_{\min}
+$$
+
+$$
+\text{CommuteTime}(x) \leq \text{Time}_{\max}
+$$
+
+$$
+\text{OwnerType}(x) = \text{"Private"}
+$$
+
+$$
+\text{AccessibilityScore}(x) \geq \text{Threshold}
+$$
+
+Where $x$ represents the selected apartment from the feasible set $X$.
+
+
+### **Solution Methodology**
+1. **Data Collection**: Automated scraping of 1000+ apartment listings
+2. **Network Analysis**: Graph-based shortest path calculations  
+3. **Multi-objective Optimization**: Pareto frontier identification
+4. **Constraint Filtering**: Feasible solution space reduction
+5. **Interactive Visualization**: Decision support interface
+
+---
+
 ## 🚀 **Key Features**
 
 ### 📊 **Advanced Analytics**
@@ -43,37 +85,6 @@ This project addresses a **facility location optimization problem** where:
 - **Multi-criteria Decision Making**: Weighted scoring across multiple objectives
 - **Constraint Satisfaction**: Hard and soft constraint handling
 - **Heuristic Algorithms**: Efficient solution finding for large search spaces
-
----
-
-## 📈 **Optimization Methodology**
-
-### **Problem Formulation**
-
-**Objective Function:**
-
-$$\min f(x) = \alpha \cdot \text{Rent}(x) + \beta \cdot \text{CommuteTime}(x) + \gamma \cdot \text{TransportCost}(x)$$
-
-**Subject to Constraints:**
-
-$$
-\begin{aligned}
-\text{Rent}(x) &\leq \text{Budget}_{\max} \\
-\text{Area}(x) &\geq \text{Area}_{\min} \\
-\text{CommuteTime}(x) &\leq \text{Time}_{\max} \\
-\text{OwnerType}(x) &= \text{"Private"} \\
-\text{AccessibilityScore}(x) &\geq \text{Threshold}
-\end{aligned}
-$$
-
-Where $x$ represents the selected apartment from the feasible set $X$.
-
-### **Solution Approach**
-1. **Data Collection**: Automated scraping of 1000+ apartment listings
-2. **Network Analysis**: Graph-based shortest path calculations
-3. **Multi-objective Optimization**: Pareto frontier identification
-4. **Constraint Filtering**: Feasible solution space reduction
-5. **Visualization**: Interactive decision support interface
 
 ---
 
