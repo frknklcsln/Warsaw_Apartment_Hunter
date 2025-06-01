@@ -24,15 +24,15 @@ This project addresses a **facility location optimization problem** where:
 
 ---
 
-## 📈 **Mathematical Formulation**
+### Problem Formulation
 
-### **Objective Function**
+**Objective Function:**
 
 $$
 \min f(x) = \alpha \cdot \text{Rent}(x) + \beta \cdot \text{CommuteTime}(x) + \gamma \cdot \text{TransportCost}(x)
 $$
 
-### **Subject to Constraints**
+**Subject to Constraints:**
 
 $$
 \begin{align*}
